@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <title>survey-form.freecodecamp.rocks</title>
+  <link rel="stylesheet" href="surveyfcc.css">
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label"> <p>Name</p><input required id="name" type="text" placeholder="Enter your name" ></label>
+    <label id="email-label"> <p>Email</p><input id="email" type="email"  placeholder="Enter your Email" required></label>
+    <label id="number-label"><p>Age (optional)</p><input min="10" max="10" id="number" type="number" min=""placeholder="Age" ></label>
+    <p>Which option best describe ypur current role?</p><select id="dropdown" placeholder="Select current role" value="">
+          <option>Student</option>
+          <option>Full Time job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+          </select>
+    <p>Would you recommend freeCodeCamp to a friend?</p>
+    <article> <input type="radio" value="Definitely" id="radio-button"name="group">Definitely </article>
+    <article> <input type="radio" value="May be" id="radio-button" name="group">May be </article>
+    <article> <input type="radio" value="Not Sure" id="radio-button"name="group">Not Sure </article>
+    <p>What is your favorite feature of freeCodeCamp?</p>
+    <select placeholder="Select an option" id="dropdown"><option>challanges</option>
+             <option>Project</option>
+             <option>Community</option>
+             <option>open source</option></select>
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <article><input type="checkbox" value="Front-end Projects"> Front-end Projects</article>
+    <article><input type="checkbox" value="Back-end Projects"> Back-end Projects</article>
+    <article><input type="checkbox" value="Challenges"> Challenges</article>
+    <article><input type="checkbox" value="Open Source Community"> Open Source Community</article>
+    <article><input type="checkbox" value="Gitter help rooms"> Gitter help rooms</article>
+    <article><input type="checkbox" value="Videos"> Videos</article>
+    <article><input type="checkbox" value="City Meetups"> City Meetups</article>
+    <article><input type="checkbox" value="Wiki"> Wiki</article>
+    <article><input type="checkbox" value="Forum"> City Forum</article>
+    <article><input type="checkbox" value="Additional Courses"> Additional Courses</article>
+    <p>Any comments or suggestions?</p><textarea id="text-area" placeholder="Enter your comment here.."></textarea>
+    <p> <input id="submit" type="submit" ></p>
+  </form>
+
+</body>
+
+</html>
